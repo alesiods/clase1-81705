@@ -1,13 +1,16 @@
 import { useEffect, useState } from "react";
 import { getUnProducto } from "../../Asycmocks";
 import ItemDetail from "../ItemDetail/ItemDetail";
+import { useParams } from "react-router-dom";
 
 const ItemDetailContainer = () => {
   const [producto, setProducto] = useState(null);
 
+  const {idItem} = useParams()
+
   useEffect(() => {
-    getUnProducto(3).then((respuesta) => setProducto(respuesta));
-  }, []);
+    getUnProducto(idItem).then((respuesta) => setProducto(respuesta));
+  }, [idItem]);
 
   return (
     <div>
