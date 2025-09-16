@@ -9,12 +9,12 @@ const NavBar = () => {
   return (
     <header>
       <Link to="/">
-        <h1>Tienda Marolio</h1>
+        <img className="logoMarolio" src={"../../../public/img/logo.png"} alt="Logo Marolio" />
       </Link>
         <nav>
             <ul>
                 <li> 
-                  <Link to="/categoria/lacteos"> Lacteos </Link> 
+                  <Link className="estiloLink" to="/categoria/lacteos"> Lacteos </Link> 
                 </li>
                 <li>
                   <Link to="/categoria/almacen"> Almacen </Link>

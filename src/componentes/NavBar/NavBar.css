@@ -10,3 +10,11 @@ li{
     margin: 10px;
     cursor: pointer;
 }
+
+.estiloLink{
+    text-decoration: none;
+}
+
+.logoMarolio{
+    width:150px;
+}

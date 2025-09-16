@@ -17,7 +17,6 @@ const ItemCount = ({inicial, stock, funcionAgregar}) => {
         }
     }
 
-    console.log(contador)
 
   return (
     <>
