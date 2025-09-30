@@ -22,9 +22,7 @@ const ItemDetailContainer = () => {
       .catch(error=> console.log(error))
   },[idItem])
 
-  /* useEffect(() => {
-    getUnProducto(idItem).then((respuesta) => setProducto(respuesta));
-  }, [idItem]); */
+  
 
   return (
     <div>
